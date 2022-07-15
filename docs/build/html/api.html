@@ -1,0 +1,459 @@
+
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
+
+    <title>api package &#8212; cryptoquant  documentation</title>
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinxdoc.css" />
+    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/_sphinx_javascript_frameworks_compat.js"></script>
+    <script src="_static/doctools.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="prev" title="api" href="modules.html" /> 
+  </head><body>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="modules.html" title="api"
+             accesskey="P">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">cryptoquant  documentation</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="modules.html" accesskey="U">api</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">api package</a></li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <section id="api-package">
+<h1>api package<a class="headerlink" href="#api-package" title="Permalink to this heading">¶</a></h1>
+<section id="submodules">
+<h2>Submodules<a class="headerlink" href="#submodules" title="Permalink to this heading">¶</a></h2>
+</section>
+<section id="module-api.glparam">
+<span id="api-glparam-module"></span><h2>api.glparam module<a class="headerlink" href="#module-api.glparam" title="Permalink to this heading">¶</a></h2>
+<p>This file contains some global parameters such as api endpoints</p>
+<dl class="py class">
+<dt class="sig sig-object py" id="api.glparam.BASEURL">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">api.glparam.</span></span><span class="sig-name descname"><span class="pre">BASEURL</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">market</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'spot'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">testnet</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#api.glparam.BASEURL" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>Deprecated BASEURL Class</p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="api.glparam.BASEURL.db">
+<span class="sig-name descname"><span class="pre">db</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'https://data.binance.vision/data'</span></em><a class="headerlink" href="#api.glparam.BASEURL.db" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</section>
+<section id="module-api.lcp">
+<span id="api-lcp-module"></span><h2>api.lcp module<a class="headerlink" href="#module-api.lcp" title="Permalink to this heading">¶</a></h2>
+<p>WARNING!!! You mustn’t add this file to git!</p>
+<p>This file describes some local properties that depends on users and should
+not be sent over the internet.</p>
+<dl class="py data">
+<dt class="sig sig-object py" id="api.lcp.PROXY_SERVER">
+<span class="sig-prename descclassname"><span class="pre">api.lcp.</span></span><span class="sig-name descname"><span class="pre">PROXY_SERVER</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'http://localhost:7890'</span></em><a class="headerlink" href="#api.lcp.PROXY_SERVER" title="Permalink to this definition">¶</a></dt>
+<dd><p>Your local proxy server</p>
+</dd></dl>
+
+<dl class="py data">
+<dt class="sig sig-object py" id="api.lcp.STORE_PATH">
+<span class="sig-prename descclassname"><span class="pre">api.lcp.</span></span><span class="sig-name descname"><span class="pre">STORE_PATH</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'/run/media/fred/storage/bian'</span></em><a class="headerlink" href="#api.lcp.STORE_PATH" title="Permalink to this definition">¶</a></dt>
+<dd><p>Path of local binance database</p>
+</dd></dl>
+
+<dl class="py data">
+<dt class="sig sig-object py" id="api.lcp.apikey">
+<span class="sig-prename descclassname"><span class="pre">api.lcp.</span></span><span class="sig-name descname"><span class="pre">apikey</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'lBgsc3ga3X4jmxJgYBbClclZvPQgmhw4WqZ9mZMhnpQh4sS6zKphtJAoPulZ7hRj'</span></em><a class="headerlink" href="#api.lcp.apikey" title="Permalink to this definition">¶</a></dt>
+<dd><p>Your api key</p>
+</dd></dl>
+
+<dl class="py data">
+<dt class="sig sig-object py" id="api.lcp.conn">
+<span class="sig-prename descclassname"><span class="pre">api.lcp.</span></span><span class="sig-name descname"><span class="pre">conn</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'mysql://bdadmin:91f3i&#64;localhost:3306/biandb'</span></em><a class="headerlink" href="#api.lcp.conn" title="Permalink to this definition">¶</a></dt>
+<dd><p>Sql connection URI</p>
+</dd></dl>
+
+<dl class="py data">
+<dt class="sig sig-object py" id="api.lcp.mysql_db">
+<span class="sig-prename descclassname"><span class="pre">api.lcp.</span></span><span class="sig-name descname"><span class="pre">mysql_db</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">{'database':</span> <span class="pre">'biandb',</span> <span class="pre">'host':</span> <span class="pre">'localhost',</span> <span class="pre">'password':</span> <span class="pre">'91f3i',</span> <span class="pre">'user':</span> <span class="pre">'bdadmin'}</span></em><a class="headerlink" href="#api.lcp.mysql_db" title="Permalink to this definition">¶</a></dt>
+<dd><p>Mysql connector</p>
+</dd></dl>
+
+<dl class="py data">
+<dt class="sig sig-object py" id="api.lcp.secretkey">
+<span class="sig-prename descclassname"><span class="pre">api.lcp.</span></span><span class="sig-name descname"><span class="pre">secretkey</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'nP3I8Q1Qtoc7SAv9Ubl33XG0JeKieWDiBJOjIZA81NmsxD2saPM8ov7V2bo57Q5Z'</span></em><a class="headerlink" href="#api.lcp.secretkey" title="Permalink to this definition">¶</a></dt>
+<dd><p>Your secret key</p>
+</dd></dl>
+
+</section>
+<section id="module-api.mdata">
+<span id="api-mdata-module"></span><h2>api.mdata module<a class="headerlink" href="#module-api.mdata" title="Permalink to this heading">¶</a></h2>
+<p>Temporary data api</p>
+<p>The module is used to fetch large amounts of data from binance vision.</p>
+<dl class="py class">
+<dt class="sig sig-object py" id="api.mdata.Trades">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">api.mdata.</span></span><span class="sig-name descname"><span class="pre">Trades</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">_symbol</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">_arg</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'spot'</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#api.mdata.Trades" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>Package for market endpoint apis</p>
+<p>A trade object refers to a trading pair in either spot, um or cm market.</p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="api.mdata.Trades.type">
+<span class="sig-name descname"><span class="pre">type</span></span><a class="headerlink" href="#api.mdata.Trades.type" title="Permalink to this definition">¶</a></dt>
+<dd><p>market type, ‘spot’, ‘cm’, or ‘um’.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>str</p>
+</dd>
+</dl>
+</dd></dl>
+
+<p class="rubric">Examples</p>
+<p>To query about the BTCUSDT pair in USD-M futures market</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">btcusdtperp</span><span class="o">=</span><span class="n">api</span><span class="o">.</span><span class="n">Trades</span><span class="p">(</span><span class="s1">&#39;BTCUSDT&#39;</span><span class="p">,</span> <span class="s1">&#39;um&#39;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">data</span><span class="o">=</span><span class="n">btcusdtperp</span><span class="o">.</span><span class="n">_kline_stored_daily</span><span class="p">(</span><span class="s1">&#39;2021-01-01&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+<dl class="py method">
+<dt class="sig sig-object py" id="api.mdata.Trades.aggtrade">
+<span class="sig-name descname"><span class="pre">aggtrade</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">start</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">end</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#api.mdata.Trades.aggtrade" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="api.mdata.Trades.kline">
+<span class="sig-name descname"><span class="pre">kline</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">start</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">end</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">interval</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#api.mdata.Trades.kline" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="api.mdata.Trades.trades">
+<span class="sig-name descname"><span class="pre">trades</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">start</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">end</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#api.mdata.Trades.trades" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="api.mdata.exchangeinfo">
+<span class="sig-prename descclassname"><span class="pre">api.mdata.</span></span><span class="sig-name descname"><span class="pre">exchangeinfo</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">market</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'spot'</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#api.mdata.exchangeinfo" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns exchangesInfo.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>market</strong> (<em>str</em>) – ‘spot’, ‘cm’ or ‘um’.</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>Current exchange trading rules and symbol information</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="api.mdata.strftime">
+<span class="sig-prename descclassname"><span class="pre">api.mdata.</span></span><span class="sig-name descname"><span class="pre">strftime</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#api.mdata.strftime" title="Permalink to this definition">¶</a></dt>
+<dd><p>format -&gt; strftime() style string.</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="api.mdata.strptime">
+<span class="sig-prename descclassname"><span class="pre">api.mdata.</span></span><span class="sig-name descname"><span class="pre">strptime</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#api.mdata.strptime" title="Permalink to this definition">¶</a></dt>
+<dd><p>string, format -&gt; new datetime parsed from a string (like time.strptime()).</p>
+</dd></dl>
+
+</section>
+<section id="module-api.mdata1">
+<span id="api-mdata1-module"></span><h2>api.mdata1 module<a class="headerlink" href="#module-api.mdata1" title="Permalink to this heading">¶</a></h2>
+<p>Mysql cached database api</p>
+<p>Time series data is stored in its original format plus a PRIMARY KEY named
+‘id’. id = int(t/interval). The setting ensures that id is unique and
+incremental.</p>
+<dl class="py function">
+<dt class="sig sig-object py" id="api.mdata1.create_table">
+<span class="sig-prename descclassname"><span class="pre">api.mdata1.</span></span><span class="sig-name descname"><span class="pre">create_table</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#api.mdata1.create_table" title="Permalink to this definition">¶</a></dt>
+<dd><p>Initialize table for first query</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="api.mdata1.query_series">
+<span class="sig-prename descclassname"><span class="pre">api.mdata1.</span></span><span class="sig-name descname"><span class="pre">query_series</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">starttime</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">endtime</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#api.mdata1.query_series" title="Permalink to this definition">¶</a></dt>
+<dd><p>The final time series data query api with cache</p>
+<p>Note: endtime mustn’t be newer than current time. Otherwire future data will be contaminated.</p>
+<p>This api is used to query time series data - kline, open interest and long short ratio.</p>
+<p>Queryed data will be stored in the mysql database.</p>
+<p>Table description example:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">MariaDB</span> <span class="p">[</span><span class="n">biandb</span><span class="p">]</span><span class="o">&gt;</span> <span class="n">desc</span> <span class="n">um_oinsts_BTCUSDT_5m</span><span class="p">;</span>
+<span class="o">+-------+------------+------+-----+---------+-------+</span>
+<span class="o">|</span> <span class="n">Field</span> <span class="o">|</span> <span class="n">Type</span>       <span class="o">|</span> <span class="n">Null</span> <span class="o">|</span> <span class="n">Key</span> <span class="o">|</span> <span class="n">Default</span> <span class="o">|</span> <span class="n">Extra</span> <span class="o">|</span>
+<span class="o">+-------+------------+------+-----+---------+-------+</span>
+<span class="o">|</span> <span class="nb">id</span>    <span class="o">|</span> <span class="n">bigint</span><span class="p">(</span><span class="mi">20</span><span class="p">)</span> <span class="o">|</span> <span class="n">NO</span>   <span class="o">|</span> <span class="n">PRI</span> <span class="o">|</span> <span class="n">NULL</span>    <span class="o">|</span>       <span class="o">|</span>
+<span class="o">|</span> <span class="n">i</span>     <span class="o">|</span> <span class="n">double</span>     <span class="o">|</span> <span class="n">YES</span>  <span class="o">|</span>     <span class="o">|</span> <span class="n">NULL</span>    <span class="o">|</span>       <span class="o">|</span>
+<span class="o">|</span> <span class="n">iv</span>    <span class="o">|</span> <span class="n">double</span>     <span class="o">|</span> <span class="n">YES</span>  <span class="o">|</span>     <span class="o">|</span> <span class="n">NULL</span>    <span class="o">|</span>       <span class="o">|</span>
+<span class="o">|</span> <span class="n">t</span>     <span class="o">|</span> <span class="n">bigint</span><span class="p">(</span><span class="mi">20</span><span class="p">)</span> <span class="o">|</span> <span class="n">YES</span>  <span class="o">|</span>     <span class="o">|</span> <span class="n">NULL</span>    <span class="o">|</span>       <span class="o">|</span>
+<span class="o">+-------+------------+------+-----+---------+-------+</span>
+<span class="mi">4</span> <span class="n">rows</span> <span class="ow">in</span> <span class="nb">set</span> <span class="p">(</span><span class="mf">0.000</span> <span class="n">sec</span><span class="p">)</span>
+</pre></div>
+</div>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>starttime</strong> (<em>int</em>) – Start time in milliseconds timestamp.</p></li>
+<li><p><strong>endtime</strong> (<em>int</em>) – End time in milliseconds timestamp.</p></li>
+<li><p><strong>kwargs</strong> (<em>dict</em>) – Graph arguments.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>Polars dataframe of the data with the ‘t’ key (Open time or time) satisfying
+starttime &lt;= t &lt; endtime</p>
+</dd>
+</dl>
+<p class="rubric">Examples</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">graph</span><span class="o">=</span><span class="p">{</span><span class="s1">&#39;market&#39;</span><span class="p">:</span><span class="s1">&#39;spot&#39;</span><span class="p">,</span> <span class="s1">&#39;endpoint&#39;</span><span class="p">:</span><span class="s1">&#39;kline&#39;</span><span class="p">,</span> <span class="s1">&#39;symbol&#39;</span><span class="p">:</span><span class="s1">&#39;BTCUSDT&#39;</span><span class="p">,</span>
+<span class="go">&#39;interval&#39;:5m}</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">data</span><span class="o">=</span><span class="n">api</span><span class="o">.</span><span class="n">query_series</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="o">**</span><span class="n">graph</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="c1"># When 0, 0 start and time is given, latested data is returned</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="api.mdata1.query_series_local">
+<span class="sig-prename descclassname"><span class="pre">api.mdata1.</span></span><span class="sig-name descname"><span class="pre">query_series_local</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">table</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">start</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">end</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#api.mdata1.query_series_local" title="Permalink to this definition">¶</a></dt>
+<dd><p>Query time series data from local database</p>
+<p>select from table where start &lt;= INDEX_NAME &lt; end</p>
+</dd></dl>
+
+</section>
+<section id="module-api.misc">
+<span id="api-misc-module"></span><h2>api.misc module<a class="headerlink" href="#module-api.misc" title="Permalink to this heading">¶</a></h2>
+<p>Messy but important functions</p>
+<dl class="py function">
+<dt class="sig sig-object py" id="api.misc.binance_auth_req">
+<span class="sig-prename descclassname"><span class="pre">api.misc.</span></span><span class="sig-name descname"><span class="pre">binance_auth_req</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">url</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">method</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">requestbody</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#api.misc.binance_auth_req" title="Permalink to this definition">¶</a></dt>
+<dd><p>Binance RESTful API requires authorization</p>
+<p>API used to send trading related requests.</p>
+<p>APIKey and SecretKEY are imported from lcp and embedded as global parameters.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>url</strong> (<em>str</em>) – URL to request</p></li>
+<li><p><strong>method</strong> (<em>function</em>) – Request method to use</p></li>
+<li><p><strong>requestbody</strong> (<em>dict</em>) – Request body without timestamp and signature</p></li>
+</ul>
+</dd>
+</dl>
+<p class="rubric">Examples</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">binance_auth_req</span><span class="p">(</span><span class="s1">&#39;https://fapi.binance.com/fapi/v1/order&#39;</span><span class="p">,</span>
+<span class="go">requests.post, {&#39;symbol&#39;:&#39;USDCUSDT&#39;, &#39;side&#39;: &#39;BUY&#39;, &#39;type&#39;:</span>
+<span class="go">&#39;MARKET&#39;, &#39;quantity&#39;:11})</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="api.misc.binance_req">
+<span class="sig-prename descclassname"><span class="pre">api.misc.</span></span><span class="sig-name descname"><span class="pre">binance_req</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">url</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">body</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#api.misc.binance_req" title="Permalink to this definition">¶</a></dt>
+<dd><p>Binance RESTful API without authorization</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>url</strong> (<em>str</em>) – URL to request</p></li>
+<li><p><strong>body</strong> (<em>dict</em>) – Request body</p></li>
+</ul>
+</dd>
+</dl>
+<p class="rubric">Examples</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span><span class="p">(</span><span class="n">binance_req</span><span class="p">(</span><span class="s2">&quot;https://api.binance.com/api/v3/time&quot;</span><span class="p">))</span>
+<span class="go">{&#39;serverTime&#39;: 1657363937756}</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="api.misc.i2ms">
+<span class="sig-prename descclassname"><span class="pre">api.misc.</span></span><span class="sig-name descname"><span class="pre">i2ms</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">tstr</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#api.misc.i2ms" title="Permalink to this definition">¶</a></dt>
+<dd><p>Convert binance’s form of interval to milliseconds.</p>
+<p class="rubric">Examples</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">i2ms</span><span class="p">(</span><span class="s1">&#39;4h&#39;</span><span class="p">)</span>
+<span class="go">14400000</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="api.misc.t2ts">
+<span class="sig-prename descclassname"><span class="pre">api.misc.</span></span><span class="sig-name descname"><span class="pre">t2ts</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">timestr</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#api.misc.t2ts" title="Permalink to this definition">¶</a></dt>
+<dd><p>Convert timestring in TIMEFORMAT to UTC timestamp in milliseconds.</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="api.misc.ts2t">
+<span class="sig-prename descclassname"><span class="pre">api.misc.</span></span><span class="sig-name descname"><span class="pre">ts2t</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">times</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#api.misc.ts2t" title="Permalink to this definition">¶</a></dt>
+<dd><p>Convert UTC timestamp in milliseconds to timestring in TIMEFORMAT.</p>
+</dd></dl>
+
+</section>
+<section id="module-api">
+<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-api" title="Permalink to this heading">¶</a></h2>
+<section id="binance-data-and-trade-api">
+<h3>Binance data and trade api<a class="headerlink" href="#binance-data-and-trade-api" title="Permalink to this heading">¶</a></h3>
+<p>Provides advanced api for data fetching and trading operations.</p>
+<p>Currently, only two modules are suggested to use: mdata1 and misc.</p>
+<p>mdata is the deprecated module to fetch data from binance server.</p>
+<p>mdata1 is the new module to fetch data from binance api.
+Results are cached in a mysql database for fast query.</p>
+<p>misc contains many useful functions.</p>
+<dl class="py function">
+<dt class="sig sig-object py" id="api.create_table">
+<span class="sig-prename descclassname"><span class="pre">api.</span></span><span class="sig-name descname"><span class="pre">create_table</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#api.create_table" title="Permalink to this definition">¶</a></dt>
+<dd><p>Initialize table for first query</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="api.exchangeinfo">
+<span class="sig-prename descclassname"><span class="pre">api.</span></span><span class="sig-name descname"><span class="pre">exchangeinfo</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">market</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'spot'</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#api.exchangeinfo" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns exchangesInfo.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>market</strong> (<em>str</em>) – ‘spot’, ‘cm’ or ‘um’.</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>Current exchange trading rules and symbol information</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="api.query_series">
+<span class="sig-prename descclassname"><span class="pre">api.</span></span><span class="sig-name descname"><span class="pre">query_series</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">starttime</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">endtime</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#api.query_series" title="Permalink to this definition">¶</a></dt>
+<dd><p>The final time series data query api with cache</p>
+<p>Note: endtime mustn’t be newer than current time. Otherwire future data will be contaminated.</p>
+<p>This api is used to query time series data - kline, open interest and long short ratio.</p>
+<p>Queryed data will be stored in the mysql database.</p>
+<p>Table description example:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">MariaDB</span> <span class="p">[</span><span class="n">biandb</span><span class="p">]</span><span class="o">&gt;</span> <span class="n">desc</span> <span class="n">um_oinsts_BTCUSDT_5m</span><span class="p">;</span>
+<span class="o">+-------+------------+------+-----+---------+-------+</span>
+<span class="o">|</span> <span class="n">Field</span> <span class="o">|</span> <span class="n">Type</span>       <span class="o">|</span> <span class="n">Null</span> <span class="o">|</span> <span class="n">Key</span> <span class="o">|</span> <span class="n">Default</span> <span class="o">|</span> <span class="n">Extra</span> <span class="o">|</span>
+<span class="o">+-------+------------+------+-----+---------+-------+</span>
+<span class="o">|</span> <span class="nb">id</span>    <span class="o">|</span> <span class="n">bigint</span><span class="p">(</span><span class="mi">20</span><span class="p">)</span> <span class="o">|</span> <span class="n">NO</span>   <span class="o">|</span> <span class="n">PRI</span> <span class="o">|</span> <span class="n">NULL</span>    <span class="o">|</span>       <span class="o">|</span>
+<span class="o">|</span> <span class="n">i</span>     <span class="o">|</span> <span class="n">double</span>     <span class="o">|</span> <span class="n">YES</span>  <span class="o">|</span>     <span class="o">|</span> <span class="n">NULL</span>    <span class="o">|</span>       <span class="o">|</span>
+<span class="o">|</span> <span class="n">iv</span>    <span class="o">|</span> <span class="n">double</span>     <span class="o">|</span> <span class="n">YES</span>  <span class="o">|</span>     <span class="o">|</span> <span class="n">NULL</span>    <span class="o">|</span>       <span class="o">|</span>
+<span class="o">|</span> <span class="n">t</span>     <span class="o">|</span> <span class="n">bigint</span><span class="p">(</span><span class="mi">20</span><span class="p">)</span> <span class="o">|</span> <span class="n">YES</span>  <span class="o">|</span>     <span class="o">|</span> <span class="n">NULL</span>    <span class="o">|</span>       <span class="o">|</span>
+<span class="o">+-------+------------+------+-----+---------+-------+</span>
+<span class="mi">4</span> <span class="n">rows</span> <span class="ow">in</span> <span class="nb">set</span> <span class="p">(</span><span class="mf">0.000</span> <span class="n">sec</span><span class="p">)</span>
+</pre></div>
+</div>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>starttime</strong> (<em>int</em>) – Start time in milliseconds timestamp.</p></li>
+<li><p><strong>endtime</strong> (<em>int</em>) – End time in milliseconds timestamp.</p></li>
+<li><p><strong>kwargs</strong> (<em>dict</em>) – Graph arguments.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>Polars dataframe of the data with the ‘t’ key (Open time or time) satisfying
+starttime &lt;= t &lt; endtime</p>
+</dd>
+</dl>
+<p class="rubric">Examples</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">graph</span><span class="o">=</span><span class="p">{</span><span class="s1">&#39;market&#39;</span><span class="p">:</span><span class="s1">&#39;spot&#39;</span><span class="p">,</span> <span class="s1">&#39;endpoint&#39;</span><span class="p">:</span><span class="s1">&#39;kline&#39;</span><span class="p">,</span> <span class="s1">&#39;symbol&#39;</span><span class="p">:</span><span class="s1">&#39;BTCUSDT&#39;</span><span class="p">,</span>
+<span class="go">&#39;interval&#39;:5m}</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">data</span><span class="o">=</span><span class="n">api</span><span class="o">.</span><span class="n">query_series</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="o">**</span><span class="n">graph</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="c1"># When 0, 0 start and time is given, latested data is returned</span>
+</pre></div>
+</div>
+</dd></dl>
+
+</section>
+</section>
+</section>
+
+
+            <div class="clearer"></div>
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <div>
+    <h3><a href="index.html">Table of Contents</a></h3>
+    <ul>
+<li><a class="reference internal" href="#">api package</a><ul>
+<li><a class="reference internal" href="#submodules">Submodules</a></li>
+<li><a class="reference internal" href="#module-api.glparam">api.glparam module</a></li>
+<li><a class="reference internal" href="#module-api.lcp">api.lcp module</a></li>
+<li><a class="reference internal" href="#module-api.mdata">api.mdata module</a></li>
+<li><a class="reference internal" href="#module-api.mdata1">api.mdata1 module</a></li>
+<li><a class="reference internal" href="#module-api.misc">api.misc module</a></li>
+<li><a class="reference internal" href="#module-api">Module contents</a><ul>
+<li><a class="reference internal" href="#binance-data-and-trade-api">Binance data and trade api</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+  </div>
+  <div>
+    <h4>Previous topic</h4>
+    <p class="topless"><a href="modules.html"
+                          title="previous chapter">api</a></p>
+  </div>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="_sources/api.rst.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>document.getElementById('searchbox').style.display = "block"</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="modules.html" title="api"
+             >previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">cryptoquant  documentation</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="modules.html" >api</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">api package</a></li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &#169; Copyright 2022, tony_zhang, Yutsing Kuh.
+      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 5.0.2.
+    </div>
+  </body>
+</html>
